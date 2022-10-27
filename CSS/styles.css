@@ -30,15 +30,18 @@ p {
 }
 
 .container {
-  width: 1170px;
-  margin: 0 15px;
+  width: 1200px;
+  padding: 0 15px;
   outline: 2px solid red;
 }
+
+/* -----------------------HEADER-------------------- */
 
 .hdr {
 }
 
 .logo {
+  margin-right: 93px;
   display: inline-block;
   padding-top: 25px;
   padding-bottom: 24px;
@@ -56,10 +59,24 @@ p {
 .logo-web {
   color: var(--logo-color);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .hdr-link-nav {
+  display: flex;
   margin: 0;
   padding: 0;
+}
+.address-item,
+.nav-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.hdr-link-nav .item + .item {
+  margin-left: 50px;
 }
 
 .hdr-link {
@@ -85,11 +102,22 @@ p {
 }
 
 .hdr-address {
+  display: flex;
+
   margin: 0;
   padding: 0;
+  margin-left: auto;
   list-style: none;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.container.hdr-address {
+  justify-content: flex-end;
+}
+
+.hdr-address .item + .item {
+  margin-left: 50px;
 }
 
 .hdr-nav-mail:hover,
@@ -101,6 +129,8 @@ p {
   text-decoration: none;
   color: var(--main-color);
 }
+
+/* -------------------------section HERO------------ */
 
 .hero {
   text-align: center;
@@ -132,13 +162,17 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.skills .container {
-}
+/* --------------------------section SKILLS--------------- */
 
 .skills-all {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.skills-item {
+  display: inline-block;
+  margin-bottom: 94px;
 }
 
 .skills-name {
@@ -158,6 +192,8 @@ p {
   color: var(--main-color);
 }
 
+/* ------------section DUTIES---------------- */
+
 .duties-title {
   text-align: center;
   padding-bottom: 50px;
@@ -167,13 +203,29 @@ p {
 }
 
 .duties-foto {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.duties-foto .item + .item {
+  margin-left: 30px;
+}
+
+.duties-item {
+  margin-bottom: 94px;
+}
+
+/* ---------------------section TEAM----------------- */
+
 .team {
   background-color: var(--back-section-color);
+}
+
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -186,6 +238,7 @@ p {
 }
 
 .team-people {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -194,19 +247,31 @@ p {
 }
 
 .team-foto {
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .team-name {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+
   color: var(--h-color);
 }
 
 .team-text {
-  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+.team-people .item + .item {
+  margin-left: 30px;
+}
+/* -----------------FOOTER------------------ */
 .ftr {
   background-color: var(--hero-back-color);
 }
@@ -231,7 +296,6 @@ p {
 
 .ftr-nav-map {
   display: inline-block;
-  margin-bottom: 9px;
   font-style: normal;
   text-decoration: none;
   line-height: 1.71;
@@ -246,7 +310,6 @@ p {
 
 .ftr-mail {
   display: inline-block;
-  margin-bottom: 9px;
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -256,6 +319,16 @@ p {
 .ftr-mail:hover,
 .ftr-mail:focus {
   color: var(--button-color);
+}
+
+.ftr-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.ftr-nav .item + .item {
+  margin-top: 9px;
 }
 
 .visually-hidden {
@@ -270,6 +343,8 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+/* ---------------------------portfolio MAIN--------- */
 
 .btn {
   margin: 0;
@@ -292,6 +367,8 @@ p {
   color: var(--back-color);
   background-color: var(--button-color);
 }
+
+/* ---------------------section WORK------- */
 
 .work {
   margin: 0;
