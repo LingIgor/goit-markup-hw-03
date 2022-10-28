@@ -10,7 +10,8 @@
 }
 
 body {
-  margin: 0;
+  width: 1600px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -30,11 +31,16 @@ p {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   padding: 0 15px;
   outline: 2px solid red;
 }
 
+.img {
+  display: block;
+}
 /* -----------------------HEADER-------------------- */
 
 .hdr {
@@ -81,6 +87,7 @@ p {
 
 .hdr-link {
   text-decoration: none;
+  color: var(--h-color);
 }
 
 .hdr-nav {
@@ -97,8 +104,12 @@ p {
   color: var(--button-color);
 }
 
-.hdr-link {
+.current {
   color: var(--h-color);
+}
+
+.hdr-link-nav .current {
+  color: var(--button-color);
 }
 
 .hdr-address {
@@ -137,9 +148,13 @@ p {
   background-color: var(--hero-back-color);
 }
 
+.hero-container {
+  min-height: 600px;
+}
+
 .hero-title {
   padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,11 +191,15 @@ p {
 }
 
 .skills-name {
-  padding-top: 94px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  display: inline-block;
+  margin-top: 94px;
+  margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+
   color: var(--h-color);
 }
 
@@ -192,11 +211,15 @@ p {
   color: var(--main-color);
 }
 
+.skills-all .item + .item {
+  margin-left: 30px;
+}
+
 /* ------------section DUTIES---------------- */
 
 .duties-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   color: var(--h-color);
@@ -229,8 +252,7 @@ p {
 }
 
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   text-align: center;
   line-height: 1.17;
@@ -276,6 +298,10 @@ p {
   background-color: var(--hero-back-color);
 }
 
+.ftr-container {
+  min-height: 252px;
+}
+
 .ftr-logo {
   display: inline-block;
   margin-top: 60px;
@@ -289,8 +315,8 @@ p {
 }
 
 .ftr-nav {
-  margin: 0;
-  padding: 0 0 60px 0;
+  padding: 0;
+  margin: 0 0 60px 0;
   list-style: none;
 }
 
@@ -347,19 +373,40 @@ p {
 /* ---------------------------portfolio MAIN--------- */
 
 .btn {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.btn .item + .item {
+  margin-left: 8px;
+}
+
+.btn-item {
+  padding: 0;
+  align-items: center;
+}
+
 .main-button {
+  font-family: "Roboto";
+  font-style: normal;
+  padding: 6px 22px;
   font-weight: 500;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
   color: var(--h-color);
+
+  color: #212121;
 }
 
 .main-button:hover,
