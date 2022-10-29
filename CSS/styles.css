@@ -420,6 +420,7 @@ p {
   margin: 0;
   margin-right: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .work-item:nth-child(3n) {
@@ -431,6 +432,7 @@ p {
 }
 
 .work-foto {
+  display: block;
 }
 
 .work-title {
