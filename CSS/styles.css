@@ -151,7 +151,7 @@ p {
 
 .hero {
   padding-top: 200px;
-  min-height: 600px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--hero-back-color);
 }
@@ -170,7 +170,6 @@ p {
 .hero-button {
   border-radius: 4px;
   padding: 10px 32px;
-  /* margin-bottom: 200px; */
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -290,16 +289,16 @@ p {
 }
 /* -----------------FOOTER------------------ */
 .ftr {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--hero-back-color);
 }
 
 .ftr-container {
-  min-height: 252px;
 }
 
 .ftr-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-decoration: none;
   font-family: "Raleway";
@@ -311,7 +310,7 @@ p {
 
 .ftr-nav {
   padding: 0;
-  margin: 0 0 60px 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -371,6 +370,7 @@ p {
   justify-content: center;
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
 
@@ -381,7 +381,6 @@ p {
 .btn-item {
   padding: 0;
   align-items: center;
-  margin-bottom: 50px;
 }
 
 .main-button {
@@ -421,7 +420,6 @@ p {
   margin: 0;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 
 .work-item:nth-child(3n) {
@@ -436,8 +434,13 @@ p {
   display: block;
 }
 
+.work-div {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
+}
+
 .work-title {
-  margin: 20px 24px 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -450,7 +453,6 @@ p {
 }
 
 .work-text {
-  margin: 0px 24px 20px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-color);
